@@ -1,0 +1,12 @@
+# 强烈建议在「干净的虚拟环境」中安装，避免与全局环境里的
+# torch / jax / onnxruntime / 多版本 OpenCV 等原生库冲突
+# （这类冲突是 mediapipe "DLL 初始化例程失败" 的常见原因）。
+#
+# mediapipe 0.10.31+ 已移除旧版 Solutions API（本项目所用），
+# 故固定到最后一个仍含它、且有 Python 3.12 wheel 的版本 0.10.21。
+# 该版本要求 numpy<2，并自带 opencv-contrib-python（提供 cv2），
+# 因此这里不再单独装 opencv-python，避免出现多个 OpenCV 互相冲突。
+numpy<2
+opencv-contrib-python<4.12
+mediapipe==0.10.21
+pygame>=2.5
