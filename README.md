@@ -102,18 +102,6 @@ ai_gesture_magic_camera/
 └── README.md
 ```
 
-## 上传 GitHub 时不要上传
-
-这些内容是本地缓存或个人配置，不需要放到 GitHub：
-
-- `.idea/`
-- `.claude/`
-- `__pycache__/`
-- `.venv/` 或 `venv/`
-- `assets/tiger_spirit/`，这是已删除猛虎特效留下的旧素材
-
-网页上传时，请进入真正的项目文件夹 `ai_gesture_magic_camera`，上传里面的代码、`effects`、`utils`、`assets`、`README.md`、`requirements.txt` 和 `.gitignore`。
-
 ## 常见问题
 
 ### 摄像头打不开
